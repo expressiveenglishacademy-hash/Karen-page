@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAREN</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              ink: "#16324A",
+              mist: "#F4F8FB",
+              mint: "#D7F2EB",
+              sky: "#E7F1FF",
+              blush: "#FFF1EC",
+              sand: "#FFF9F1",
+              coral: "#E66C53",
+              spruce: "#2C7A78",
+            },
+            boxShadow: {
+              soft: "0 18px 50px rgba(23, 52, 79, 0.09)",
+              float: "0 24px 70px rgba(60, 131, 153, 0.14)",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
