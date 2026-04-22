@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAREN</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.KARENApp = window.KARENApp || {};
+
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              ink: "#16324A",
+              mist: "#F4F8FB",
+              mint: "#D7F2EB",
+              sky: "#E7F1FF",
+              blush: "#FFF1EC",
+              sand: "#FFF9F1",
+              coral: "#E66C53",
+              spruce: "#2C7A78",
+            },
+            boxShadow: {
+              soft: "0 18px 50px rgba(23, 52, 79, 0.09)",
+              float: "0 24px 70px rgba(60, 131, 153, 0.14)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel" data-presets="env,react" src="./dateHelpers.js"></script>
+    <script type="text/babel" data-presets="env,react" src="./sampleCases.js"></script>
+    <script type="text/babel" data-presets="env,react" src="./Filters.js"></script>
+    <script type="text/babel" data-presets="env,react" src="./CaseCard.js"></script>
+    <script type="text/babel" data-presets="env,react" src="./CaseForm.js"></script>
+    <script type="text/babel" data-presets="env,react" src="./CaseDetailsModal.js"></script>
+    <script type="text/babel" data-presets="env,react" src="./App.js"></script>
+    <script type="text/babel" data-presets="env,react" src="./main.js"></script>
+  </body>
+</html>
